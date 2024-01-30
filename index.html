@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custom events</title>
+  </head>
+  <body
+    onload="loading()"
+    onunload="unloading()"
+    onbeforeunload="beforeunload()"
+    onoffline="offline()"
+    ononline="online()"
+  >
+    <div id="div">
+      <button
+        onclick="clicked()"
+        onmousedown="mousedown()"
+        oncontextmenu="rightclick()"
+        onmousemove="over()"
+        ondblclick="doubleclick()"
+        id="btn"
+        style="
+          margin-top: 50px;
+          margin-left: 50px;
+          padding: 20px;
+          background-color: brown;
+          color: white;
+          font-size: xx-large;
+          border-radius: 25px;
+        "
+      >
+        New button
+      </button>
+    </div>
+    <input
+      type="text"
+      onkeydown="keydown()"
+      onkeypress="pressed()"
+      onkeyup="upped()"
+      onblur="blured()"
+      onmouseenter="mouseentered()"
+      style="margin-left: 30px; padding: 20px 200px"
+    />
+
+    <p draggable="true" ondrag="dragged()">drag me</p>
+    <script src="script.js"></script>
+  </body>
+</html>
